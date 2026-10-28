@@ -1,0 +1,530 @@
+/* ==========================================================================
+   TB CRÉATION — THIERNO CRÉATION | FEUILLE DE STYLE OFFICIELLE (STANDARD 2026)
+   Charte : Bleu Royal (#24549A), Vert Olive Doré (#A69B43) & Blanc (#FFFFFF)
+   ========================================================================== */
+
+body {
+            background-color: #FFFFFF;
+            color: #24549A;
+            overflow-x: hidden;
+        }
+
+        /* Motif géométrique subtil sur fond blanc */
+        .bg-african-light {
+            background-color: #FFFFFF;
+            background-image: 
+                radial-gradient(rgba(166, 155, 67, 0.12) 1.25px, transparent 1.25px), 
+                radial-gradient(rgba(36, 84, 154, 0.07) 1.25px, #FFFFFF 1.25px);
+            background-size: 36px 36px;
+            background-position: 0 0, 18px 18px;
+        }
+
+        /* Frise géométrique africaine aux couleurs de la charte : Bleu Sombre, Vert, Blanc */
+        .african-charter-border {
+            height: 6px;
+            background: repeating-linear-gradient(
+                90deg,
+                #24549A 0px,
+                #24549A 24px,
+                #A69B43 24px,
+                #A69B43 48px,
+                #FFFFFF 48px,
+                #FFFFFF 56px,
+                #B8AC4E 56px,
+                #B8AC4E 80px
+            );
+        }
+
+        /* Animations d'apparition au défilement (Intersection Observer) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-35px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(35px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Délais d'animation */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+
+        /* Effet Glassmorphism Blanc pour la barre de navigation */
+        .nav-glass-white {
+            background: rgba(255, 255, 255, 0.93);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(36, 84, 154, 0.12);
+            box-shadow: 0 10px 30px -10px rgba(36, 84, 154, 0.10);
+        }
+
+        /* Dégradé de texte Bleu Sombre & Vert Émeraude */
+        .text-brand-gradient {
+            background: linear-gradient(135deg, #24549A 0%, #A69B43 55%, #B8AC4E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Bouton Vert Olive Doré (#A69B43) animé */
+        .btn-emerald {
+            background: linear-gradient(135deg, #A69B43 0%, #B8AC4E 100%);
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        .btn-emerald:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px -6px rgba(166, 155, 67, 0.48);
+            background: linear-gradient(135deg, #24549A 0%, #A69B43 100%);
+        }
+
+        /* Bouton Bleu Royal (#24549A) */
+        .btn-navy {
+            background-color: #24549A;
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        .btn-navy:hover {
+            background-color: #A69B43;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -6px rgba(36, 84, 154, 0.32);
+        }
+
+        /* Zoom fluide sur les cartes du Lookbook */
+        .lookbook-card .img-wrapper img {
+            transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .lookbook-card:hover .img-wrapper img {
+            transform: scale(1.07);
+        }
+
+        /* Barre de défilement personnalisée */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #24549A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A69B43;
+        }
+
+        /* ================= STANDARD 2026 — SYSTÈME D'ANIMATION & MOTION DESIGN ================= */
+        :root {
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+            --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Barre de progression du défilement (Scroll Progress Bar) */
+        #scroll-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3.5px;
+            background: linear-gradient(90deg, #24549A 0%, #A69B43 55%, #B8AC4E 100%);
+            transform-origin: 0% 50%;
+            transform: scaleX(0);
+            z-index: 100;
+            pointer-events: none;
+            will-change: transform;
+            box-shadow: 0 1px 8px rgba(166, 155, 67, 0.45);
+        }
+
+        /* Dégradé animé très subtil pour le texte signature */
+        @keyframes gradientShift2026 {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .text-brand-gradient {
+            background: linear-gradient(125deg, #24549A 0%, #A69B43 42%, #B8AC4E 72%, #24549A 100%);
+            background-size: 220% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift2026 9s ease-in-out infinite;
+        }
+
+        /* Animations d'entrée Hero (Fade In, Slide Up, Text Reveal) */
+        @keyframes heroSlideUp {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 26px, 0);
+            }
+            100% {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        @keyframes textRevealMask {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 105%, 0) rotate(1.5deg);
+            }
+            100% {
+                opacity: 1;
+                transform: translate3d(0, 0, 0) rotate(0deg);
+            }
+        }
+        .hero-animate {
+            opacity: 0;
+            animation: heroSlideUp 0.7s var(--ease-out-expo) forwards;
+            will-change: transform, opacity;
+        }
+        .hero-delay-1 { animation-delay: 80ms; }
+        .hero-delay-2 { animation-delay: 180ms; }
+        .hero-delay-3 { animation-delay: 280ms; }
+        .hero-delay-4 { animation-delay: 380ms; }
+        .hero-delay-5 { animation-delay: 480ms; }
+        .hero-delay-6 { animation-delay: 580ms; }
+
+        /* Masque Text Reveal pour les grands titres */
+        .text-reveal-mask {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+            padding-bottom: 0.08em;
+        }
+        .text-reveal-inner {
+            display: inline-block;
+            transform: translate3d(0, 105%, 0);
+            opacity: 0;
+            transition: transform 0.72s var(--ease-out-expo), opacity 0.55s ease;
+            will-change: transform, opacity;
+        }
+        .reveal.active .text-reveal-inner,
+        .reveal-left.active .text-reveal-inner,
+        .reveal-right.active .text-reveal-inner,
+        .hero-title-ready .text-reveal-inner {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+
+        /* Image Reveal avec masque progressif & zoom doux */
+        @keyframes cardStaggerIn {
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 28px, 0) scale(0.97);
+            }
+            100% {
+                opacity: 1;
+                transform: translate3d(0, 0, 0) scale(1);
+            }
+        }
+        @keyframes imgCurtainReveal {
+            0% {
+                clip-path: inset(12% 0 12% 0 round 16px);
+                transform: scale(1.09);
+                filter: saturate(0.85);
+            }
+            100% {
+                clip-path: inset(0% 0 0% 0 round 0px);
+                transform: scale(1);
+                filter: saturate(1);
+            }
+        }
+        .lookbook-card-enter {
+            opacity: 0;
+            animation: cardStaggerIn 0.62s var(--ease-out-expo) forwards;
+            will-change: transform, opacity;
+        }
+        .lookbook-card-enter .img-wrapper img {
+            animation: imgCurtainReveal 0.75s var(--ease-out-expo) forwards;
+        }
+
+        /* Soulignement animé des liens de navigation & indicateur actif */
+        .nav-link-2026 {
+            position: relative;
+            padding-bottom: 4px;
+            transition: color 0.25s ease;
+        }
+        .nav-link-2026::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #24549A, #A69B43);
+            border-radius: 99px;
+            transform: scaleX(0);
+            transform-origin: right center;
+            transition: transform 0.35s var(--ease-out-expo);
+        }
+        .nav-link-2026:hover::after,
+        .nav-link-2026.nav-active::after {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+        .nav-link-2026.nav-active {
+            color: #A69B43 !important;
+        }
+
+        /* Boutons avec reflets soyeux et micro-interactions icônes */
+        .btn-emerald, .btn-navy {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s var(--ease-spring), box-shadow 0.3s var(--ease-spring), background 0.3s ease;
+            will-change: transform;
+        }
+        .btn-emerald::before, .btn-navy::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+            transform: skewX(-20deg);
+            transition: left 0.6s var(--ease-out-expo);
+            pointer-events: none;
+        }
+        .btn-emerald:hover::before, .btn-navy:hover::before {
+            left: 140%;
+        }
+        .btn-emerald i, .btn-navy i {
+            transition: transform 0.28s var(--ease-spring);
+        }
+        .btn-emerald:hover i.fa-arrow-right,
+        .btn-navy:hover i.fa-arrow-right,
+        .btn-emerald:hover i.fa-paper-plane {
+            transform: translateX(4px);
+        }
+        .btn-emerald:hover i.fa-tape {
+            transform: rotate(-12deg) scale(1.1);
+        }
+
+        /* Cartes Savoir-Faire, Processus & Témoignages : élévation et profondeur 3D subtile */
+        .card-3d-tilt {
+            transition: transform 0.4s var(--ease-out-quart), box-shadow 0.4s var(--ease-out-quart), border-color 0.3s ease;
+            transform-style: preserve-3d;
+            will-change: transform;
+        }
+        .card-3d-tilt:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 22px 44px -14px rgba(36, 84, 154, 0.16), 0 8px 18px -6px rgba(166, 155, 67, 0.12);
+        }
+        .icon-micro {
+            transition: transform 0.38s var(--ease-spring), background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .group:hover .icon-micro {
+            transform: scale(1.1) rotate(-4deg);
+            box-shadow: 0 10px 20px -6px rgba(166, 155, 67, 0.40);
+        }
+
+        /* Ouverture fluide du panneau de mensurations (Accordéon CSS Grid/Max-Height) */
+        #measurements-panel {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+            border-width: 0;
+            transition: max-height 0.48s var(--ease-out-expo), opacity 0.38s ease, padding 0.38s ease, margin 0.38s ease, border-width 0.2s ease;
+        }
+        #measurements-panel.panel-open {
+            max-height: 420px;
+            opacity: 1;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            margin-top: 1rem;
+            border-width: 2px;
+        }
+
+        /* Animation de pulsation douce sur mise à jour du devis */
+        @keyframes pricePulse2026 {
+            0% { transform: scale(1); }
+            45% { transform: scale(1.045); color: #A69B43; }
+            100% { transform: scale(1); }
+        }
+        .price-bump {
+            animation: pricePulse2026 0.38s var(--ease-spring);
+        }
+
+        /* Modale Lightbox : entrée et sortie avec mise à l'échelle fluide */
+        #lightbox-modal .lightbox-card {
+            transform: scale(0.94) translateY(16px);
+            opacity: 0;
+            transition: transform 0.42s var(--ease-out-expo), opacity 0.35s ease;
+        }
+        #lightbox-modal.modal-open .lightbox-card {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+        #lightbox-modal.modal-open #modal-img {
+            animation: imgCurtainReveal 0.68s var(--ease-out-expo) forwards;
+        }
+        .filter-btn {
+            transition: transform 0.28s var(--ease-spring), background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+        }
+        .filter-btn:hover {
+            transform: translateY(-2px);
+        }
+        .filter-btn:active {
+            transform: translateY(0) scale(0.97);
+        }
+
+        /* Menu mobile : apparition échelonnée des liens */
+        #mobile-menu .mobile-link {
+            opacity: 0;
+            transform: translateX(-14px);
+            transition: opacity 0.32s ease, transform 0.38s var(--ease-out-expo), color 0.2s ease, padding-left 0.25s ease;
+        }
+        #mobile-menu.menu-active .mobile-link {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        #mobile-menu.menu-active .mobile-link:nth-child(1) { transition-delay: 60ms; }
+        #mobile-menu.menu-active .mobile-link:nth-child(2) { transition-delay: 105ms; }
+        #mobile-menu.menu-active .mobile-link:nth-child(3) { transition-delay: 150ms; }
+        #mobile-menu.menu-active .mobile-link:nth-child(4) { transition-delay: 195ms; }
+        #mobile-menu.menu-active .mobile-link:nth-child(5) { transition-delay: 240ms; }
+        #mobile-menu.menu-active .mobile-link:nth-child(6) { transition-delay: 285ms; }
+        #mobile-menu.menu-active .mobile-link:nth-child(7) { transition-delay: 330ms; }
+        #mobile-menu .mobile-link:not(.btn-emerald):hover {
+            padding-left: 8px;
+        }
+
+        /* Bouton Retour en Haut (Back to Top) avec anneau SVG de progression */
+        #back-to-top {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(16px) scale(0.9);
+            transition: opacity 0.35s ease, transform 0.35s var(--ease-spring), visibility 0.35s;
+        }
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+        #back-to-top:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        /* Accessibilité Clavier (Focus Visible Soigné) */
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 2px solid #A69B43;
+            outline-offset: 2px;
+        }
+
+        /* Respect strict de prefers-reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal, .reveal-left, .reveal-right, .hero-animate, .text-reveal-inner, .lookbook-card-enter {
+                opacity: 1 !important;
+                transform: none !important;
+                clip-path: none !important;
+            }
+        }
+    
+        /* === SECTION VIDÉOS & DÉFILÉ 2026 (SHOWROOM IMMERSIF) === */
+        .video-stage-shell {
+            background: radial-gradient(120% 120% at 15% 10%, rgba(166, 155, 67, 0.24) 0%, rgba(36, 84, 154, 0.97) 58%, #183B6E 100%);
+            box-shadow: 0 30px 70px -20px rgba(36, 84, 154, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.18);
+        }
+        .video-phone-frame {
+            aspect-ratio: 9 / 16;
+            max-height: 600px;
+            box-shadow: 0 25px 60px -12px rgba(24, 59, 110, 0.7), 0 0 0 1px rgba(166, 155, 67, 0.45), 0 0 40px -10px rgba(166, 155, 67, 0.35);
+            transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .video-phone-frame:hover {
+            box-shadow: 0 30px 70px -10px rgba(24, 59, 110, 0.8), 0 0 0 2px rgba(166, 155, 67, 0.75), 0 0 55px -5px rgba(166, 155, 67, 0.45);
+        }
+        .video-reel-card {
+            transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease;
+        }
+        .video-reel-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 38px -12px rgba(36, 84, 154, 0.28), 0 0 0 1px rgba(166, 155, 67, 0.55);
+        }
+        .video-reel-card.active-reel {
+            border-color: #A69B43 !important;
+            box-shadow: 0 20px 42px -10px rgba(166, 155, 67, 0.38), 0 0 0 2px #A69B43 !important;
+            transform: translateY(-4px);
+        }
+        .video-reel-card .reel-thumb-video {
+            transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.45s ease;
+        }
+        .video-reel-card:hover .reel-thumb-video {
+            transform: scale(1.06);
+        }
+        /* Equalizer Audio Animation */
+        .eq-bars {
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 2px;
+            height: 14px;
+        }
+        .eq-bar {
+            width: 3px;
+            background: #A69B43;
+            border-radius: 2px;
+            height: 4px;
+            transition: height 0.2s ease;
+        }
+        .is-playing .eq-bar:nth-child(1) { animation: eqBounce 0.7s ease-in-out infinite; }
+        .is-playing .eq-bar:nth-child(2) { animation: eqBounce 0.55s ease-in-out 0.15s infinite; }
+        .is-playing .eq-bar:nth-child(3) { animation: eqBounce 0.8s ease-in-out 0.3s infinite; }
+        .is-playing .eq-bar:nth-child(4) { animation: eqBounce 0.6s ease-in-out 0.1s infinite; }
+        @keyframes eqBounce {
+            0%, 100% { height: 4px; }
+            50% { height: 14px; }
+        }
+        .video-progress-track {
+            background: rgba(255, 255, 255, 0.22);
+            cursor: pointer;
+            transition: height 0.2s ease;
+        }
+        .video-progress-track:hover {
+            height: 8px;
+        }
+        .video-fade-swap {
+            animation: videoSwapFade 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        @keyframes videoSwapFade {
+            0% { opacity: 0.35; transform: scale(0.985); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+.pano{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);overflow:hidden}
+.pano-track{display:flex;gap:20px;width:max-content;animation:pano 70s linear infinite;padding:40px 0}
+.pano:hover .pano-track{animation-play-state:paused}
+@keyframes pano{to{transform:translateX(calc(-50% - 10px))}}
+.pano-card{position:relative;flex:none;width:210px;aspect-ratio:3/4;border-radius:22px;overflow:hidden;border:4px solid #fff;box-shadow:0 22px 40px -18px rgba(36,84,154,.42);cursor:pointer;transition:transform .5s}
+.pano-card:nth-child(even){transform:translateY(34px)}.pano-card:nth-child(3n){transform:translateY(-20px)}
+.pano-card:hover{transform:translateY(-10px) scale(1.04);z-index:2}
+.pano-card img{width:100%;height:100%;object-fit:cover;object-position:top}
+.pano-card span{position:absolute;left:10px;bottom:10px;padding:4px 10px;border-radius:99px;background:rgba(255,255,255,.95);color:#24549A;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+@media(min-width:768px){.pano-card{width:270px}}
+@media(prefers-reduced-motion:reduce){.pano-track{animation:none}}

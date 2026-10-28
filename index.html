@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>THIERNO CRÉATION — TB CRÉATION | Stylisme & Modélisme Africain Moderne</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <!-- Configuration Tailwind Personnalisée : Identité Officielle Bleu Royal (#24549A), Vert Olive Doré (#A69B43) & Blanc (#FFFFFF) -->
+    <!-- Styles CSS Personnalisés et Animations -->
+        <!-- Feuille de style externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased selection:bg-emeraldBrand-bright selection:text-white">
+    <!-- Barre de progression de lecture 2026 -->
+    <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+    <!-- ================= BARRE SUPÉRIEURE DÉCORATIVE (CHARTE GRAPHIQUE) ================= -->
+    <div class="w-full bg-navy text-white text-xs py-2 px-4 sm:px-8 border-b border-emeraldBrand/30 relative z-50">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emeraldBrand-bright animate-pulse"></span>
+                <span class="font-medium tracking-wide">THIERNO CRÉATION — TB CRÉATION • Stylisme & Modélisme Africain Moderne</span>
+            </div>
+            <div class="hidden md:flex flex-wrap items-center gap-5 text-white/90">
+                <a href="tel:+224623779665" class="hover:text-emeraldBrand-light transition-colors flex items-center gap-1.5"><i class="fa-solid fa-phone text-emeraldBrand-light"></i><span>+224 623 77 96 65</span></a>
+                <a href="tel:+224620062925" class="hover:text-emeraldBrand-light transition-colors flex items-center gap-1.5"><i class="fa-solid fa-phone text-emeraldBrand-light"></i><span>+224 620 06 29 25</span></a>
+                <a href="mailto:tbcreation224@gmail.com" class="hover:text-emeraldBrand-light transition-colors flex items-center gap-1.5"><i class="fa-solid fa-envelope text-emeraldBrand-light"></i><span>tbcreation224@gmail.com</span></a>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-emeraldBrand-light"></i><span>Tombo, commune de Kaloum</span></span>
+            </div>
+        </div>
+    </div>
+    <div class="african-charter-border"></div>
+
+    <!-- ================= BARRE DE NAVIGATION (FOND BLANC) ================= -->
+    <header id="navbar" class="sticky top-0 left-0 w-full z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300 py-4 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            
+            <!-- Logo Officiel Bleu Sombre & Vert -->
+            <a href="#accueil" class="flex items-center gap-3.5 group">
+                <div class="w-12 h-12 rounded-xl bg-navy flex items-center justify-center shadow-md border-2 border-emeraldBrand-bright group-hover:scale-105 transition-transform duration-300 relative overflow-hidden">
+                    <span class="font-serif font-extrabold text-xl tracking-tighter text-white z-10">TB</span>
+                    <div class="absolute bottom-0 inset-x-0 h-1.5 bg-emeraldBrand-bright"></div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-extrabold text-lg sm:text-xl tracking-wider text-navy leading-none">TB CRÉATION</span>
+                    <span class="text-[10px] font-bold uppercase tracking-[0.22em] text-emeraldBrand mt-1">Thierno Création</span>
+                </div>
+            </a>
+
+            <!-- Liens Desktop -->
+            <nav class="hidden lg:flex items-center gap-8" aria-label="Navigation principale">
+                <a href="#accueil" class="nav-link-2026 nav-active text-sm font-semibold uppercase tracking-wider text-navy hover:text-emeraldBrand-bright transition-colors">Accueil</a>
+                <a href="#savoir-faire" class="nav-link-2026 text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-emeraldBrand-bright transition-colors">Savoir-Faire</a>
+                <a href="#lookbook" class="nav-link-2026 text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-emeraldBrand-bright transition-colors">Lookbook</a>
+                <a href="#videos" class="nav-link-2026 text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-emeraldBrand-bright transition-colors flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emeraldBrand-bright animate-pulse"></span>Défilé Vidéo</a>
+                <a href="#sur-mesure" class="nav-link-2026 text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-emeraldBrand-bright transition-colors">Atelier & Devis</a>
+                <a href="#processus" class="nav-link-2026 text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-emeraldBrand-bright transition-colors">Processus</a>
+                <a href="#contact" class="nav-link-2026 text-sm font-semibold uppercase tracking-wider text-slate-700 hover:text-emeraldBrand-bright transition-colors">Contact</a>
+            </nav>
+
+            <!-- Bouton Appel à l'action (Vert & Bleu Sombre) -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="#sur-mesure" class="btn-emerald font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full flex items-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-tape"></i>
+                    <span>Prendre Mesure / Devis</span>
+                </a>
+            </div>
+
+            <!-- Bouton Hamburger Mobile -->
+            <button id="mobile-menu-btn" aria-label="Menu" class="lg:hidden w-11 h-11 rounded-xl bg-surface-soft border border-slate-200 flex flex-col items-center justify-center gap-1.5 text-navy focus:outline-none">
+                <span class="w-6 h-0.5 bg-navy transition-all duration-300" id="bar-1"></span>
+                <span class="w-6 h-0.5 bg-emeraldBrand transition-all duration-300" id="bar-2"></span>
+                <span class="w-4 h-0.5 bg-navy self-end mr-2.5 transition-all duration-300" id="bar-3"></span>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Déroulant (Thème Blanc) -->
+        <div id="mobile-menu" class="lg:hidden fixed inset-x-0 top-[112px] bg-white border-b-2 border-emeraldBrand shadow-2xl px-6 py-8 flex flex-col gap-4 transform -translate-y-[150%] opacity-0 transition-all duration-500 z-30">
+            <a href="#accueil" class="mobile-link text-lg font-serif font-bold text-navy hover:text-emeraldBrand py-2 border-b border-slate-100">Accueil</a>
+            <a href="#savoir-faire" class="mobile-link text-lg font-serif font-bold text-navy hover:text-emeraldBrand py-2 border-b border-slate-100">Savoir-Faire & Étoffes</a>
+            <a href="#lookbook" class="mobile-link text-lg font-serif font-bold text-navy hover:text-emeraldBrand py-2 border-b border-slate-100">Lookbook & Collections</a>
+            <a href="#videos" class="mobile-link text-lg font-serif font-bold text-navy hover:text-emeraldBrand py-2 border-b border-slate-100 flex items-center justify-between"><span>Immersion & Défilé Vidéo</span><span class="text-xs font-sans uppercase tracking-widest bg-emeraldBrand/10 text-emeraldBrand px-2.5 py-1 rounded-full">5 Reels</span></a>
+            <a href="#sur-mesure" class="mobile-link text-lg font-serif font-bold text-navy hover:text-emeraldBrand py-2 border-b border-slate-100">Simulateur Sur-Mesure</a>
+            <a href="#processus" class="mobile-link text-lg font-serif font-bold text-navy hover:text-emeraldBrand py-2 border-b border-slate-100">Processus de Création</a>
+            <a href="#contact" class="mobile-link text-lg font-serif font-bold text-navy hover:text-emeraldBrand py-2 border-b border-slate-100">Contact & Atelier</a>
+            <a href="#sur-mesure" class="mobile-link btn-emerald text-center font-bold uppercase tracking-wider py-3.5 rounded-full mt-2">
+                Prendre Mesure / Devis
+            </a>
+        </div>
+    </header>
+
+    <section id="accueil" class="relative pt-16 pb-16 bg-african-light overflow-hidden">
+<div data-parallax="-0.12" class="parallax-orb absolute -top-10 right-0 w-96 h-96 bg-emeraldBrand-bright/10 rounded-full blur-[110px] pointer-events-none will-change-transform"></div>
+<div data-parallax="0.1" class="parallax-orb absolute top-40 -left-10 w-96 h-96 bg-navy/5 rounded-full blur-[110px] pointer-events-none will-change-transform"></div>
+<div id="hero-intro" class="max-w-4xl mx-auto px-4 text-center space-y-6 relative z-10 hero-title-ready">
+<div class="hero-animate hero-delay-1 inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emeraldBrand-soft border border-emeraldBrand-border text-emeraldBrand font-bold text-xs uppercase tracking-[0.18em] shadow-sm"><span class="w-2 h-2 rounded-full bg-emeraldBrand-bright animate-pulse"></span>Haute Couture & Prêt-à-Porter Africain</div>
+<h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold text-navy leading-[1.1] tracking-tight">
+    <span class="text-reveal-mask"><span class="text-reveal-inner" style="transition-delay: 140ms;">THIERNO CRÉATION</span></span><br>
+    <span class="text-reveal-mask"><span class="text-reveal-inner text-brand-gradient italic font-semibold" style="transition-delay: 260ms;">— TB CRÉATION</span></span>
+</h1>
+<div class="hero-animate hero-delay-3 inline-block px-4 py-1.5 rounded-lg bg-navy text-white text-xs sm:text-sm font-bold tracking-[0.22em] uppercase shadow-sm">Stylisme & Modélisme Africain Moderne</div>
+<p class="hero-animate hero-delay-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">La maison <strong class="text-navy">TB CRÉATION</strong> sublime le patrimoine textile africain — <span class="text-emeraldBrand font-semibold">Faso Dan Fani, Koko Dunda, Bazin Riche</span> — en grands boubous, agbadas et ensembles taillés à vos mesures.</p>
+<div class="hero-animate hero-delay-5 flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+<a href="#lookbook" class="w-full sm:w-auto btn-emerald font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-full flex items-center justify-center gap-3 shadow-lg"><span>Explorer le Lookbook</span><i class="fa-solid fa-arrow-right"></i></a>
+<a href="#sur-mesure" class="w-full sm:w-auto px-8 py-4 rounded-full border-2 border-navy bg-white hover:bg-navy text-navy hover:text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md flex items-center justify-center gap-3 group"><i class="fa-solid fa-compass-drafting text-emeraldBrand-bright transition-transform duration-300 group-hover:rotate-12"></i><span>Atelier Sur-Mesure</span></a>
+</div></div>
+<div class="pano mt-8 relative z-10 hero-animate hero-delay-6" aria-label="Panorama des créations"><div id="pano-track" class="pano-track"></div></div>
+<div id="stats-section" class="max-w-4xl mx-auto px-4 mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 relative z-10"><div class="reveal p-4 rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-md transition-all duration-300 text-center card-3d-tilt"><div class="font-serif text-3xl font-extrabold text-navy"><span class="stat-number" data-target="12">0</span><span class="text-emeraldBrand-bright">+</span></div><p class="text-[11px] font-semibold text-slate-500 mt-1 uppercase tracking-wider">Ans d'Expertise</p></div><div class="reveal delay-100 p-4 rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-md transition-all duration-300 text-center card-3d-tilt"><div class="font-serif text-3xl font-extrabold text-emeraldBrand"><span class="stat-number" data-target="950">0</span>+</div><p class="text-[11px] font-semibold text-slate-500 mt-1 uppercase tracking-wider">Créations Sur-Mesure</p></div><div class="reveal delay-200 p-4 rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-md transition-all duration-300 text-center card-3d-tilt"><div class="font-serif text-3xl font-extrabold text-navy"><span class="stat-number" data-target="99">0</span><span class="text-emeraldBrand-bright">%</span></div><p class="text-[11px] font-semibold text-slate-500 mt-1 uppercase tracking-wider">Clients Satisfaits</p></div><div class="reveal delay-300 p-4 rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-md transition-all duration-300 text-center card-3d-tilt"><div class="font-serif text-3xl font-extrabold text-emeraldBrand"><span class="stat-number" data-target="100">0</span>%</div><p class="text-[11px] font-semibold text-slate-500 mt-1 uppercase tracking-wider">Étoffes Nobles</p></div></div></section>
+
+    <!-- ================= SECTION SAVOIR-FAIRE & ÉTOFFES NOBLES (FOND GRIS PERLE / BLANC) ================= -->
+    <section id="savoir-faire" class="py-24 px-4 sm:px-8 lg:px-16 bg-surface-soft border-y border-slate-200/80 relative">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- En-tête de section -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16 reveal">
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 text-emeraldBrand text-xs uppercase tracking-[0.25em] font-bold mb-2">
+                        <span class="w-8 h-[2px] bg-emeraldBrand"></span>
+                        Patrimoine & Architecture Textile
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-navy leading-tight">
+                        <span class="text-reveal-mask"><span class="text-reveal-inner">L'Excellence du <span class="text-emeraldBrand italic font-normal">Savoir-Faire</span> & des Étoffes Nobles</span></span>
+                    </h2>
+                </div>
+                <div class="lg:col-span-5">
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Chaque pièce signée <strong class="text-navy">THIERNO CRÉATION (TB Création)</strong> naît d'une sélection rigoureuse des meilleurs tissages d'Afrique de l'Ouest, sublimés par les techniques de patronage les plus exigeantes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grille des 6 Étoffes & Spécialités (Cartes Blanches avec accents Bleu Sombre et Vert) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                
+                <!-- Étoffe 1 : Faso Dan Fani -->
+                <div class="card-3d-tilt bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-13 h-13 w-12 h-12 rounded-xl bg-navy text-white group-hover:bg-emeraldBrand flex items-center justify-center text-xl icon-micro">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emeraldBrand-soft text-emeraldBrand text-xs font-bold uppercase tracking-wider">Tissage Main</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2 group-hover:text-emeraldBrand transition-colors">Faso Dan Fani Authentique</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Pagne tissé traditionnel revisité dans des coupes de blazers croisés, jupes tailleurs et vestes d'apparat au tombé structuré incomparable.
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy">
+                        <span>Origine : Artisanat Burkinabè & Ouest-Africain</span>
+                        <i class="fa-solid fa-check-circle text-emeraldBrand-bright"></i>
+                    </div>
+                </div>
+
+                <!-- Étoffe 2 : Koko Dunda -->
+                <div class="card-3d-tilt bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-xl transition-all duration-300 group reveal delay-100">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-12 h-12 rounded-xl bg-emeraldBrand text-white group-hover:bg-navy flex items-center justify-center text-xl icon-micro">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emeraldBrand-soft text-emeraldBrand text-xs font-bold uppercase tracking-wider">Art Tinctorial</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2 group-hover:text-emeraldBrand transition-colors">Koko Dunda Contemporain</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Étoffe teinte artisanalement aux motifs vibrants, travaillée en robes fluides, chemises de créateur et ensembles chics modernes.
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy">
+                        <span>Finition : Couleurs grand teint & soyeuses</span>
+                        <i class="fa-solid fa-check-circle text-emeraldBrand-bright"></i>
+                    </div>
+                </div>
+
+                <!-- Étoffe 3 : Bazin Riche -->
+                <div class="card-3d-tilt bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-xl transition-all duration-300 group reveal delay-200">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-12 h-12 rounded-xl bg-navy text-white group-hover:bg-emeraldBrand flex items-center justify-center text-xl icon-micro">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emeraldBrand-soft text-emeraldBrand text-xs font-bold uppercase tracking-wider">Haute Cérémonie</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2 group-hover:text-emeraldBrand transition-colors">Bazin Riche Premier Choix</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Damassé de coton d'exception au lustre éclatant, dédié aux grands boubous trois pièces, tuniques sénateur et robes de gala.
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy">
+                        <span>Qualité : Damassé Supérieur 100% Coton</span>
+                        <i class="fa-solid fa-check-circle text-emeraldBrand-bright"></i>
+                    </div>
+                </div>
+
+                <!-- Étoffe 4 : Bogolan -->
+                <div class="card-3d-tilt bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-12 h-12 rounded-xl bg-emeraldBrand text-white group-hover:bg-navy flex items-center justify-center text-xl icon-micro">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emeraldBrand-soft text-emeraldBrand text-xs font-bold uppercase tracking-wider">Graphisme Royal</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2 group-hover:text-emeraldBrand transition-colors">Bogolan & Lin Naturel</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Alliance audacieuse entre les symboles graphiques du Bogolan malien et la fraîcheur du lin pour des vestes et tuniques au caractère unique.
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy">
+                        <span>Style : Afro-Minimaliste & Urbain</span>
+                        <i class="fa-solid fa-check-circle text-emeraldBrand-bright"></i>
+                    </div>
+                </div>
+
+                <!-- Étoffe 5 : Wax Hollandais -->
+                <div class="card-3d-tilt bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-xl transition-all duration-300 group reveal delay-100">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-12 h-12 rounded-xl bg-navy text-white group-hover:bg-emeraldBrand flex items-center justify-center text-xl icon-micro">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emeraldBrand-soft text-emeraldBrand text-xs font-bold uppercase tracking-wider">Coupe Couture</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2 group-hover:text-emeraldBrand transition-colors">Wax Hollandais & Dentelle</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Travail de précision autour des imprimés Wax combinés à la dentelle guipure ou au tulle brodé pour sublimer la silhouette féminine.
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy">
+                        <span>Idéal pour : Robes Sirène & Cortèges</span>
+                        <i class="fa-solid fa-check-circle text-emeraldBrand-bright"></i>
+                    </div>
+                </div>
+
+                <!-- Étoffe 6 : Broderie Royale -->
+                <div class="card-3d-tilt bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-emeraldBrand shadow-sm hover:shadow-xl transition-all duration-300 group reveal delay-200">
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="w-12 h-12 rounded-xl bg-emeraldBrand text-white group-hover:bg-navy flex items-center justify-center text-xl icon-micro">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emeraldBrand-soft text-emeraldBrand text-xs font-bold uppercase tracking-wider">Signature TB</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2 group-hover:text-emeraldBrand transition-colors">Broderie Royale Sur-Mesure</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Ornementation géométrique fine sur cols, poignets et plastrons, réalisée au fil de soie assorti selon les souhaits du client.
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-navy">
+                        <span>Exclusivité : Dessin créé à l'atelier</span>
+                        <i class="fa-solid fa-check-circle text-emeraldBrand-bright"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECTION GALERIE / LOOKBOOK INTERACTIF (FOND BLANC PUR) ================= -->
+    <section id="lookbook" class="py-24 px-4 sm:px-8 lg:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- En-tête de section -->
+            <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-emeraldBrand-soft text-emeraldBrand text-xs uppercase tracking-[0.2em] font-bold mb-3">
+                    Catalogue & Collections
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-navy">
+                    <span class="text-reveal-mask"><span class="text-reveal-inner">Lookbook <span class="text-emeraldBrand italic font-normal">TB Création</span></span></span>
+                </h2>
+                <p class="text-slate-600 mt-4 text-sm sm:text-base">
+                    Filtrez nos créations par catégorie et cliquez sur un modèle pour admirer les finitions ou lancer une commande personnalisée à vos mesures.
+                </p>
+            </div>
+
+            <!-- Boutons de Filtres Dynamiques (Actif en Vert, Texte en Bleu Sombre) -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12 reveal" id="lookbook-filters">
+                <button data-filter="all" class="filter-btn active px-6 py-3 rounded-full text-xs sm:text-sm uppercase tracking-wider font-bold transition-all bg-emeraldBrand text-white shadow-md">
+                    Tout Voir
+                </button>
+                <button data-filter="homme" class="filter-btn px-6 py-3 rounded-full text-xs sm:text-sm uppercase tracking-wider font-bold transition-all bg-surface-soft text-navy border border-slate-200 hover:border-emeraldBrand">
+                    Homme
+                </button>
+                <button data-filter="mariage" class="filter-btn px-6 py-3 rounded-full text-xs sm:text-sm uppercase tracking-wider font-bold transition-all bg-surface-soft text-navy border border-slate-200 hover:border-emeraldBrand">
+                    Mariage & Cérémonie
+                </button>
+                <button data-filter="pret-a-porter" class="filter-btn px-6 py-3 rounded-full text-xs sm:text-sm uppercase tracking-wider font-bold transition-all bg-surface-soft text-navy border border-slate-200 hover:border-emeraldBrand">
+                    Prêt-à-Porter
+                </button>
+            </div>
+
+            <!-- Grille Dynamique du Lookbook -->
+            <div id="lookbook-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Injecté par JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= IMMERSION & DÉFILÉ VIDÉO (STANDARD 2026) ================= -->
+    <section id="videos" class="py-24 px-4 sm:px-8 lg:px-16 bg-surface-soft border-t border-slate-200 relative overflow-hidden">
+        <!-- Halo décoratif subtil -->
+        <div class="pointer-events-none absolute -top-32 right-1/4 w-96 h-96 rounded-full bg-emeraldBrand/10 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-32 left-10 w-80 h-80 rounded-full bg-navy/5 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- En-tête de section -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-14 gap-8 reveal">
+                <div>
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-navy text-white text-xs uppercase tracking-widest font-bold mb-4 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-emeraldBrand-bright animate-ping"></span>
+                        <span>L'Atelier en Mouvement • Immersion 2026</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-navy leading-tight">
+                        Défilé Privé &amp; <span class="text-emeraldBrand italic font-normal">Coulisses Haute Couture</span>
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3 max-w-2xl">
+                        Découvrez le tombé réel de nos étoffes, la précision de nos broderies au fil d'or et le soin apporté à chaque finition à travers nos 5 capsules vidéo exclusives.
+                    </p>
+                </div>
+
+                <!-- Filtres rapides par capsule -->
+                <div class="flex flex-wrap items-center gap-2.5" role="tablist" aria-label="Sélection rapide des capsules vidéo">
+                    <button type="button" data-reel-select="0" class="video-pill-btn bg-navy text-white border border-navy px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-sm flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles text-emeraldBrand-bright"></i>
+                        <span>01. Showroom &amp; Nouveautés</span>
+                    </button>
+                    <button type="button" data-reel-select="1" class="video-pill-btn bg-white text-navy border border-slate-300 hover:border-emeraldBrand px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2">
+                        <span>02. Rosace Royale</span>
+                    </button>
+                    <button type="button" data-reel-select="2" class="video-pill-btn bg-white text-navy border border-slate-300 hover:border-emeraldBrand px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2">
+                        <span>03. Gestes d'Atelier</span>
+                    </button>
+                    <button type="button" data-reel-select="3" class="video-pill-btn bg-white text-navy border border-slate-300 hover:border-emeraldBrand px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2">
+                        <span>04. Tapis Rouge</span>
+                    </button>
+                    <button type="button" data-reel-select="4" class="video-pill-btn bg-white text-navy border border-slate-300 hover:border-emeraldBrand px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2">
+                        <span>05. Kaftan Ivoire</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Scène Principale Cinéma (Bleu Sombre & Vert Émeraude) -->
+            <div class="video-stage-shell rounded-3xl p-6 sm:p-10 lg:p-12 text-white mb-12 reveal border border-emeraldBrand/30">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    
+                    <!-- Colonne Gauche : Lecteur Vertical 9:16 Haute Couture -->
+                    <div class="lg:col-span-5 flex flex-col items-center">
+                        <div id="main-video-frame" class="video-phone-frame is-playing relative w-full max-w-[330px] rounded-[28px] overflow-hidden bg-navy-dark border border-emeraldBrand/40 group">
+                            
+                            <!-- Vidéo Principale -->
+                            <video id="featured-atelier-video" class="w-full h-full object-cover cursor-pointer" playsinline loop muted preload="metadata" poster="videos/v1.webp" src="videos/v1.mp4"></video>
+
+                            <!-- Badge Supérieur En Direct / Audio -->
+                            <div class="absolute top-4 inset-x-4 flex items-center justify-between pointer-events-none z-20">
+                                <div class="px-3 py-1.5 rounded-full bg-navy/80 backdrop-blur-md border border-white/15 flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-white shadow-lg">
+                                    <div class="eq-bars" id="featured-eq">
+                                        <span class="eq-bar"></span>
+                                        <span class="eq-bar"></span>
+                                        <span class="eq-bar"></span>
+                                        <span class="eq-bar"></span>
+                                    </div>
+                                    <span id="featured-badge-cat">Showroom &amp; Nouveautés</span>
+                                </div>
+                                <span id="featured-counter-pill" class="px-3 py-1 rounded-full bg-emeraldBrand text-white text-[11px] font-extrabold tracking-widest shadow">
+                                    01 / 05
+                                </span>
+                            </div>
+
+                            <!-- Bouton Play Central Flottant (Apparaît en pause) -->
+                            <button type="button" id="featured-center-play" aria-label="Lire ou mettre en pause la vidéo" class="absolute inset-0 flex items-center justify-center bg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                <span class="w-16 h-16 rounded-full bg-emeraldBrand/95 text-white flex items-center justify-center shadow-2xl border-2 border-white/80 transform group-hover:scale-110 transition-transform">
+                                    <i id="featured-center-icon" class="fa-solid fa-pause text-xl"></i>
+                                </span>
+                            </button>
+
+                            <!-- Barre de Contrôle Glassmorphique Basse -->
+                            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-navy-dark via-navy-dark/80 to-transparent z-20">
+                                <!-- Barre de progression interactive -->
+                                <div id="featured-progress-track" class="video-progress-track w-full h-1.5 rounded-full mb-3 overflow-hidden relative" title="Cliquer pour naviguer dans la vidéo">
+                                    <div id="featured-progress-bar" class="h-full bg-gradient-to-r from-emeraldBrand to-emeraldBrand-bright w-0 transition-all duration-100"></div>
+                                </div>
+
+                                <div class="flex items-center justify-between gap-2">
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" id="btn-video-play" class="w-9 h-9 rounded-full bg-white/15 hover:bg-emeraldBrand text-white flex items-center justify-center transition-colors" aria-label="Lecture / Pause">
+                                            <i id="icon-video-play" class="fa-solid fa-pause text-xs"></i>
+                                        </button>
+                                        <button type="button" id="btn-video-mute" class="px-3 h-9 rounded-full bg-white/15 hover:bg-emeraldBrand text-white flex items-center gap-1.5 text-xs font-semibold transition-colors" aria-label="Activer ou couper le son">
+                                            <i id="icon-video-mute" class="fa-solid fa-volume-xmark"></i>
+                                            <span id="label-video-mute">Activer le son</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="flex items-center gap-2">
+                                        <span id="featured-time-display" class="text-[11px] font-mono text-slate-300">0:00</span>
+                                        <button type="button" id="btn-video-fullscreen" class="w-9 h-9 rounded-full bg-white/15 hover:bg-emeraldBrand text-white flex items-center justify-center transition-colors" aria-label="Plein écran" title="Plein écran">
+                                            <i class="fa-solid fa-expand text-xs"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Droite : Narration Éditoriale, Détails Couture & Action Sur-Mesure -->
+                    <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-3 mb-4">
+                                <span id="featured-tag-pill" class="px-3.5 py-1 rounded-full bg-emeraldBrand/20 border border-emeraldBrand/50 text-emeraldBrand-light text-xs font-bold uppercase tracking-widest">
+                                    Nouvelle Collection • Showroom
+                                </span>
+                                <span id="featured-duration-label" class="text-xs text-slate-300 flex items-center gap-1.5">
+                                    <i class="fa-regular fa-clock text-emeraldBrand-bright"></i>
+                                    <span>Capsule Haute Définition</span>
+                                </span>
+                            </div>
+
+                            <h3 id="featured-video-title" class="font-serif text-2xl sm:text-4xl font-bold text-white leading-snug mb-4">
+                                Arrivages Showroom : Tuniques Rayées, Costume Champagne &amp; Grand Boubou Brodé Or
+                            </h3>
+
+                            <p id="featured-video-desc" class="text-slate-200 text-base sm:text-lg leading-relaxed mb-6">
+                                Présentation détaillée en atelier de nos nouvelles étoffes : tissu blanc à broderie gris clair, tuniques rayées beige/bleu ciel et bleu nuit, ensemble deux-pièces champagne à boutons-pression fixés à la machine et grand boubou trois-pièces brodé au fil d'or.
+                            </p>
+
+                            <!-- Points forts techniques de la pièce présentée -->
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mb-8">
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
+                                    <span class="text-[11px] uppercase tracking-wider text-emeraldBrand-light font-bold block mb-1">Étoffe &amp; Matière</span>
+                                    <p id="featured-spec-fabric" class="text-sm font-semibold text-white">Bazin Riche, Coton Glacé &amp; Fil d'Or</p>
+                                </div>
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
+                                    <span class="text-[11px] uppercase tracking-wider text-emeraldBrand-light font-bold block mb-1">Finition Signature</span>
+                                    <p id="featured-spec-finish" class="text-sm font-semibold text-white">Boutons-pression machine &amp; Broderie</p>
+                                </div>
+                                <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
+                                    <span class="text-[11px] uppercase tracking-wider text-emeraldBrand-light font-bold block mb-1">Disponibilité</span>
+                                    <p id="featured-spec-avail" class="text-sm font-semibold text-white">Sur-Mesure &amp; Prêt-à-Porter</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Actions & Navigation entre capsules -->
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-6 border-t border-white/15">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <button type="button" id="btn-order-video-look" class="btn-emerald font-bold text-xs sm:text-sm uppercase tracking-wider px-6 py-4 rounded-xl flex items-center gap-2.5 shadow-lg">
+                                    <i class="fa-solid fa-scissors"></i>
+                                    <span>Commander ce Modèle Sur-Mesure</span>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center gap-2.5 self-end sm:self-auto">
+                                <button type="button" id="btn-prev-reel" class="w-11 h-11 rounded-xl bg-white/10 hover:bg-emeraldBrand text-white border border-white/15 flex items-center justify-center transition-all" aria-label="Vidéo précédente">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button type="button" id="btn-next-reel" class="w-11 h-11 rounded-xl bg-white/10 hover:bg-emeraldBrand text-white border border-white/15 flex items-center justify-center transition-all" aria-label="Vidéo suivante">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Grille Interactive des 5 Capsules (Survol Aperçu + Sélection Directe) -->
+            <div class="mb-4 flex items-center justify-between">
+                <p class="text-xs font-bold uppercase tracking-widest text-navy flex items-center gap-2">
+                    <i class="fa-solid fa-film text-emeraldBrand"></i>
+                    <span>Sélectionnez une capsule ou survolez pour un aperçu instantané</span>
+                </p>
+                <span class="text-xs text-slate-500 hidden sm:inline">5 vidéos officielles TB Création</span>
+            </div>
+
+            <div id="video-reels-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 reveal-stagger">
+                
+                <!-- Capsule 1 -->
+                <article data-reel-index="0" class="video-reel-card active-reel card-3d-tilt cursor-pointer group bg-white rounded-2xl overflow-hidden border-2 border-slate-200 flex flex-col">
+                    <div class="relative aspect-[9/14] bg-navy overflow-hidden">
+                        <video class="reel-thumb-video w-full h-full object-cover" muted loop playsinline preload="none" poster="videos/v1.webp" src="videos/v1.mp4"></video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emeraldBrand text-white text-[10px] font-extrabold uppercase tracking-wider shadow">
+                            01 • Showroom
+                        </span>
+                        <span class="reel-status-badge absolute top-3 right-3 w-7 h-7 rounded-full bg-white text-navy flex items-center justify-center text-xs shadow">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        <div class="absolute bottom-3 inset-x-3 text-white">
+                            <p class="text-[11px] text-emeraldBrand-light font-bold uppercase tracking-wider">Nouveautés</p>
+                            <h4 class="font-serif font-bold text-sm leading-snug line-clamp-2">Tuniques, Costume Champagne &amp; Boubou Or</h4>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Capsule 2 -->
+                <article data-reel-index="1" class="video-reel-card card-3d-tilt cursor-pointer group bg-white rounded-2xl overflow-hidden border-2 border-slate-200 flex flex-col">
+                    <div class="relative aspect-[9/14] bg-navy overflow-hidden">
+                        <video class="reel-thumb-video w-full h-full object-cover" muted loop playsinline preload="none" poster="videos/v2.webp" src="videos/v2.mp4"></video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-navy/85 border border-white/20 text-white text-[10px] font-extrabold uppercase tracking-wider">
+                            02 • Signature
+                        </span>
+                        <span class="reel-status-badge absolute top-3 right-3 w-7 h-7 rounded-full bg-white/90 text-navy flex items-center justify-center text-xs shadow">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        <div class="absolute bottom-3 inset-x-3 text-white">
+                            <p class="text-[11px] text-emeraldBrand-light font-bold uppercase tracking-wider">Défilé Showroom</p>
+                            <h4 class="font-serif font-bold text-sm leading-snug line-clamp-2">Ensemble Noir Plissé &amp; Rosace Brodé Rouge</h4>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Capsule 3 -->
+                <article data-reel-index="2" class="video-reel-card card-3d-tilt cursor-pointer group bg-white rounded-2xl overflow-hidden border-2 border-slate-200 flex flex-col">
+                    <div class="relative aspect-[9/14] bg-navy overflow-hidden">
+                        <video class="reel-thumb-video w-full h-full object-cover" muted loop playsinline preload="none" poster="videos/v3.webp" src="videos/v3.mp4"></video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-navy/85 border border-white/20 text-white text-[10px] font-extrabold uppercase tracking-wider">
+                            03 • Savoir-Faire
+                        </span>
+                        <span class="reel-status-badge absolute top-3 right-3 w-7 h-7 rounded-full bg-white/90 text-navy flex items-center justify-center text-xs shadow">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        <div class="absolute bottom-3 inset-x-3 text-white">
+                            <p class="text-[11px] text-emeraldBrand-light font-bold uppercase tracking-wider">Coulisses Atelier</p>
+                            <h4 class="font-serif font-bold text-sm leading-snug line-clamp-2">Repassage Vapeur, Pliage &amp; Packaging Prestige</h4>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Capsule 4 -->
+                <article data-reel-index="3" class="video-reel-card card-3d-tilt cursor-pointer group bg-white rounded-2xl overflow-hidden border-2 border-slate-200 flex flex-col">
+                    <div class="relative aspect-[9/14] bg-navy overflow-hidden">
+                        <video class="reel-thumb-video w-full h-full object-cover" muted loop playsinline preload="none" poster="videos/v4.webp" src="videos/v4.mp4"></video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-navy/85 border border-white/20 text-white text-[10px] font-extrabold uppercase tracking-wider">
+                            04 • Gala
+                        </span>
+                        <span class="reel-status-badge absolute top-3 right-3 w-7 h-7 rounded-full bg-white/90 text-navy flex items-center justify-center text-xs shadow">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        <div class="absolute bottom-3 inset-x-3 text-white">
+                            <p class="text-[11px] text-emeraldBrand-light font-bold uppercase tracking-wider">Tapis Rouge</p>
+                            <h4 class="font-serif font-bold text-sm leading-snug line-clamp-2">Ensemble Rouge Impérial &amp; Gilet Brocart Or</h4>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Capsule 5 -->
+                <article data-reel-index="4" class="video-reel-card card-3d-tilt cursor-pointer group bg-white rounded-2xl overflow-hidden border-2 border-slate-200 flex flex-col col-span-2 sm:col-span-1">
+                    <div class="relative aspect-[9/14] bg-navy overflow-hidden">
+                        <video class="reel-thumb-video w-full h-full object-cover" muted loop playsinline preload="none" poster="videos/v5.webp" src="videos/v5.mp4"></video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-navy/85 border border-white/20 text-white text-[10px] font-extrabold uppercase tracking-wider">
+                            05 • Élégance
+                        </span>
+                        <span class="reel-status-badge absolute top-3 right-3 w-7 h-7 rounded-full bg-white/90 text-navy flex items-center justify-center text-xs shadow">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        <div class="absolute bottom-3 inset-x-3 text-white">
+                            <p class="text-[11px] text-emeraldBrand-light font-bold uppercase tracking-wider">Coupe Longue</p>
+                            <h4 class="font-serif font-bold text-sm leading-snug line-clamp-2">Kaftan Crème Ivoire à Broderie Minimaliste</h4>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SIMULATEUR ATELIER SUR-MESURE & DEVIS (BLANC, BLEU SOMBRE & VERT) ================= -->
+    <section id="sur-mesure" class="py-24 px-4 sm:px-8 lg:px-16 bg-surface-mint border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-navy text-white text-xs uppercase tracking-[0.2em] font-bold mb-3">
+                    Atelier Sur-Mesure & Devis Instantané
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-navy">
+                    <span class="text-reveal-mask"><span class="text-reveal-inner">Configurez Votre <span class="text-emeraldBrand italic font-normal">Tenue Sur-Mesure</span></span></span>
+                </h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                    Sélectionnez votre coupe, votre étoffe et vos mensurations pour obtenir une estimation immédiate et transmettre votre fiche technique à notre chef d'atelier.
+                </p>
+            </div>
+
+            <!-- Carte Principale Blanche avec En-tête Bleu Sombre -->
+            <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden reveal">
+                
+                <!-- Bandeau Supérieur Bleu Sombre -->
+                <div class="bg-navy text-white p-6 sm:px-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b-4 border-emeraldBrand-bright">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-emeraldBrand-bright/20 border border-emeraldBrand-bright flex items-center justify-center text-emeraldBrand-bright text-xl">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold">Fiche de Confection Personnalisée</h3>
+                            <p class="text-xs text-white/75">Patronage individuel • Finitions Haute Couture TB Création</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-xl border border-white/15 text-right">
+                        <span class="text-[10px] uppercase tracking-widest text-emeraldBrand-bright font-bold block">Estimation Temps Réel</span>
+                        <div id="live-price-header" class="font-serif text-xl font-bold text-white">145 000 FCFA <span class="text-xs font-normal text-white/75">(~221 €)</span></div>
+                    </div>
+                </div>
+
+                <!-- Corps du Simulateur -->
+                <form id="bespoke-form" class="p-6 sm:p-10 space-y-8">
+                    
+                    <!-- Étape 1 : Choix du Modèle -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-3">
+                            1. Choisissez le Type de Tenue *
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+                            
+                            <label class="cursor-pointer">
+                                <input type="radio" name="garmentType" value="Costume Africain 3 Pièces" data-base="135000" class="peer sr-only" checked>
+                                <div class="h-full p-4 rounded-2xl border-2 border-slate-200 bg-surface-soft peer-checked:border-emeraldBrand peer-checked:bg-emeraldBrand-soft transition-all flex flex-col justify-between">
+                                    <i class="fa-solid fa-user-tie text-xl text-navy peer-checked:text-emeraldBrand mb-2"></i>
+                                    <div>
+                                        <span class="text-xs font-bold text-navy block">Costume Africain 3 Pièces</span>
+                                        <span class="text-[11px] text-emeraldBrand font-semibold">Dès 135 000 FCFA</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="garmentType" value="Boubou Royal Brodé" data-base="150000" class="peer sr-only">
+                                <div class="h-full p-4 rounded-2xl border-2 border-slate-200 bg-surface-soft peer-checked:border-emeraldBrand peer-checked:bg-emeraldBrand-soft transition-all flex flex-col justify-between">
+                                    <i class="fa-solid fa-crown text-xl text-navy mb-2"></i>
+                                    <div>
+                                        <span class="text-xs font-bold text-navy block">Boubou Royal Brodé</span>
+                                        <span class="text-[11px] text-emeraldBrand font-semibold">Dès 150 000 FCFA</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="garmentType" value="Robe de Soirée / Mariage" data-base="175000" class="peer sr-only">
+                                <div class="h-full p-4 rounded-2xl border-2 border-slate-200 bg-surface-soft peer-checked:border-emeraldBrand peer-checked:bg-emeraldBrand-soft transition-all flex flex-col justify-between">
+                                    <i class="fa-solid fa-person-dress text-xl text-navy mb-2"></i>
+                                    <div>
+                                        <span class="text-xs font-bold text-navy block">Robe Soirée / Mariage</span>
+                                        <span class="text-[11px] text-emeraldBrand font-semibold">Dès 175 000 FCFA</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="garmentType" value="Ensemble Moderne Faso Dan Fani" data-base="115000" class="peer sr-only">
+                                <div class="h-full p-4 rounded-2xl border-2 border-slate-200 bg-surface-soft peer-checked:border-emeraldBrand peer-checked:bg-emeraldBrand-soft transition-all flex flex-col justify-between">
+                                    <i class="fa-solid fa-layer-group text-xl text-navy mb-2"></i>
+                                    <div>
+                                        <span class="text-xs font-bold text-navy block">Ensemble Faso Dan Fani</span>
+                                        <span class="text-[11px] text-emeraldBrand font-semibold">Dès 115 000 FCFA</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="garmentType" value="Tunique Koko Dunda" data-base="85000" class="peer sr-only">
+                                <div class="h-full p-4 rounded-2xl border-2 border-slate-200 bg-surface-soft peer-checked:border-emeraldBrand peer-checked:bg-emeraldBrand-soft transition-all flex flex-col justify-between">
+                                    <i class="fa-solid fa-shirt text-xl text-navy mb-2"></i>
+                                    <div>
+                                        <span class="text-xs font-bold text-navy block">Tunique Koko Dunda</span>
+                                        <span class="text-[11px] text-emeraldBrand font-semibold">Dès 85 000 FCFA</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <!-- Étape 2 : Qualité d'Étoffe, Finition & Mode de prise de mesure -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label for="fabricSelect" class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-2">
+                                2. Étoffe & Matière *
+                            </label>
+                            <select id="fabricSelect" class="w-full px-4 py-3.5 rounded-xl bg-surface-soft border border-slate-300 text-navy font-medium text-sm focus:border-emeraldBrand focus:ring-2 focus:ring-emeraldBrand/20 focus:outline-none">
+                                <option value="Faso Dan Fani Tissé Main" data-extra="20000">Faso Dan Fani Tissé Main (+20 000 FCFA)</option>
+                                <option value="Bazin Riche Premier Choix" data-extra="35000">Bazin Riche Premier Choix (+35 000 FCFA)</option>
+                                <option value="Koko Dunda Artisanal" data-extra="10000">Koko Dunda Artisanal (+10 000 FCFA)</option>
+                                <option value="Bogolan & Lin Supérieur" data-extra="25000">Bogolan & Lin Supérieur (+25 000 FCFA)</option>
+                                <option value="Wax Hollandais & Dentelle" data-extra="30000">Wax Hollandais & Dentelle (+30 000 FCFA)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="finishSelect" class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-2">
+                                3. Niveau de Finition & Broderie *
+                            </label>
+                            <select id="finishSelect" class="w-full px-4 py-3.5 rounded-xl bg-surface-soft border border-slate-300 text-navy font-medium text-sm focus:border-emeraldBrand focus:ring-2 focus:ring-emeraldBrand/20 focus:outline-none">
+                                <option value="Coupe Moderne Épurée" data-finish="0">Coupe Moderne Épurée (Inclus)</option>
+                                <option value="Broderie Fine Col & Poignets" data-finish="15000">Broderie Fine Col & Poignets (+15 000 FCFA)</option>
+                                <option value="Broderie Royale Intégrale" data-finish="35000">Broderie Royale Intégrale (+35 000 FCFA)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="measureMode" class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-2">
+                                4. Prise de Mesures *
+                            </label>
+                            <select id="measureMode" class="w-full px-4 py-3.5 rounded-xl bg-surface-soft border border-slate-300 text-navy font-medium text-sm focus:border-emeraldBrand focus:ring-2 focus:ring-emeraldBrand/20 focus:outline-none">
+                                <option value="Rendez-vous en Atelier">Séance de mesure à l'Atelier</option>
+                                <option value="Saisie Directe des Mensurations">Saisir mes mensurations exactes</option>
+                                <option value="Visio-Assistance avec Modéliste">Assistance Visio à distance</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Panneau Mensurations Exactes (Affiché sur clic ou sélection) -->
+                    <div class="flex items-center justify-between bg-emeraldBrand-soft/70 px-5 py-3.5 rounded-xl border border-emeraldBrand-border">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-ruler-combined text-emeraldBrand text-lg"></i>
+                            <span class="text-xs sm:text-sm font-bold text-navy">Vous connaissez déjà vos mensurations (Épaules, Poitrine, Taille, Longueur) ?</span>
+                        </div>
+                        <button type="button" id="toggle-measurements-btn" aria-expanded="false" aria-controls="measurements-panel" class="text-xs font-extrabold uppercase tracking-wider px-4 py-2 rounded-lg bg-white text-emeraldBrand border border-emeraldBrand/30 hover:bg-emeraldBrand hover:text-white transition-all duration-300 shadow-sm">
+                            Saisir mes mesures
+                        </button>
+                    </div>
+
+                    <div id="measurements-panel" class="px-6 rounded-2xl bg-surface-soft border-emeraldBrand/30 space-y-4" aria-hidden="true">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-serif font-bold text-navy text-base"><i class="fa-solid fa-tape text-emeraldBrand mr-2"></i>Vos Mensurations Corporelles (en cm)</h4>
+                            <span class="text-xs text-slate-500">Optionnel • Vérifié par notre modéliste</span>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                            <div>
+                                <label class="text-xs font-bold text-slate-700 block mb-1">Carrure Épaules (cm)</label>
+                                <input type="number" id="m-shoulder" placeholder="Ex: 46" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-xs font-bold text-slate-700 block mb-1">Tour de Poitrine (cm)</label>
+                                <input type="number" id="m-chest" placeholder="Ex: 100" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-xs font-bold text-slate-700 block mb-1">Tour de Taille (cm)</label>
+                                <input type="number" id="m-waist" placeholder="Ex: 86" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="text-xs font-bold text-slate-700 block mb-1">Longueur Souhaitée (cm)</label>
+                                <input type="number" id="m-length" placeholder="Ex: 78" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coordonnées Client -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 pt-2">
+                        <div>
+                            <label for="clientName" class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-2">Nom Complet *</label>
+                            <input type="text" id="clientName" required placeholder="Ex: Ousmane Bamba" class="w-full px-4 py-3.5 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="clientPhone" class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-2">Téléphone / WhatsApp *</label>
+                            <input type="tel" id="clientPhone" required placeholder="Ex: +224 623 77 96 65" class="w-full px-4 py-3.5 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="eventDate" class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-2">Date de Livraison Souhaitée</label>
+                            <input type="date" id="eventDate" class="w-full px-4 py-3.5 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="clientNotes" class="block text-xs uppercase tracking-wider text-navy font-extrabold mb-2">Précisions sur votre commande (Couleurs souhaitées : Bleu royal, Vert olive doré, Blanc, etc.)</label>
+                        <textarea id="clientNotes" rows="3" placeholder="Précisez vos préférences de coupe, col ou référence d'un modèle du Lookbook..." class="w-full px-4 py-3.5 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none"></textarea>
+                    </div>
+
+                    <!-- Résumé Devis & Validation -->
+                    <div class="p-6 rounded-2xl bg-surface-soft border-2 border-navy/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="text-center md:text-left">
+                            <span class="text-xs uppercase tracking-widest text-slate-500 font-bold block">Total Estimé (Étoffe + Patronage + Confection) :</span>
+                            <div class="font-serif text-3xl font-extrabold text-navy mt-1" id="price-estimate">
+                                155 000 FCFA <span class="text-base font-sans font-semibold text-emeraldBrand">(~236 €)</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full md:w-auto btn-emerald font-bold text-sm uppercase tracking-wider px-10 py-4 rounded-full flex items-center justify-center gap-3 shadow-lg">
+                            <span>Valider mon Devis Sur-Mesure</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+
+                    <!-- Notification de Confirmation -->
+                    <div id="form-notification" class="hidden p-5 rounded-2xl border-2 border-emeraldBrand bg-emeraldBrand-soft text-navy text-sm"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SECTION PROCESSUS ("DU CROQUIS À LA CRÉATION") & TÉMOIGNAGES ================= -->
+    <section id="processus" class="py-24 px-4 sm:px-8 lg:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- En-tête Processus -->
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="text-emeraldBrand text-xs uppercase tracking-[0.25em] font-bold block mb-2">Méthodologie Haute Couture</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-navy"><span class="text-reveal-mask"><span class="text-reveal-inner">Du Croquis à la <span class="text-emeraldBrand italic font-normal">Création</span></span></span></h2>
+            </div>
+
+            <!-- 4 Étapes avec Icônes Animées en Vert & Bleu Sombre -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative mb-24">
+                <div class="hidden md:block absolute top-12 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-navy via-emeraldBrand-bright to-navy opacity-25"></div>
+
+                <!-- Étape 1 -->
+                <div class="card-3d-tilt relative text-center p-6 rounded-2xl bg-surface-soft border border-slate-200/80 hover:border-emeraldBrand transition-all group reveal">
+                    <div class="w-20 h-20 mx-auto rounded-2xl bg-navy text-white group-hover:bg-emeraldBrand flex flex-col items-center justify-center relative z-10 shadow-md mb-5 icon-micro">
+                        <span class="text-[10px] uppercase tracking-widest text-emeraldBrand-bright group-hover:text-white font-bold">01</span>
+                        <i class="fa-solid fa-pen-nib text-2xl mt-0.5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2">Écoute & Croquis</h3>
+                    <p class="text-slate-600 text-sm">
+                        Analyse de votre morphologie et dessin d'un modèle exclusif adapté à votre événement.
+                    </p>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="card-3d-tilt relative text-center p-6 rounded-2xl bg-surface-soft border border-slate-200/80 hover:border-emeraldBrand transition-all group reveal delay-100">
+                    <div class="w-20 h-20 mx-auto rounded-2xl bg-emeraldBrand text-white group-hover:bg-navy flex flex-col items-center justify-center relative z-10 shadow-md mb-5 icon-micro">
+                        <span class="text-[10px] uppercase tracking-widest text-white/80 font-bold">02</span>
+                        <i class="fa-solid fa-tape text-2xl mt-0.5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2">Étoffes & Mesures</h3>
+                    <p class="text-slate-600 text-sm">
+                        Choix des tissages authentiques et relevé anatomique précis en 18 points de contrôle.
+                    </p>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="card-3d-tilt relative text-center p-6 rounded-2xl bg-surface-soft border border-slate-200/80 hover:border-emeraldBrand transition-all group reveal delay-200">
+                    <div class="w-20 h-20 mx-auto rounded-2xl bg-navy text-white group-hover:bg-emeraldBrand flex flex-col items-center justify-center relative z-10 shadow-md mb-5 icon-micro">
+                        <span class="text-[10px] uppercase tracking-widest text-emeraldBrand-bright group-hover:text-white font-bold">03</span>
+                        <i class="fa-solid fa-compass-drafting text-2xl mt-0.5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2">Modélisme & Coupe</h3>
+                    <p class="text-slate-600 text-sm">
+                        Tracé du patron individuel, assemblage haute précision, broderies et essayage d'ajustement.
+                    </p>
+                </div>
+
+                <!-- Étape 4 -->
+                <div class="card-3d-tilt relative text-center p-6 rounded-2xl bg-surface-soft border border-slate-200/80 hover:border-emeraldBrand transition-all group reveal delay-300">
+                    <div class="w-20 h-20 mx-auto rounded-2xl bg-emeraldBrand text-white group-hover:bg-navy flex flex-col items-center justify-center relative z-10 shadow-md mb-5 icon-micro">
+                        <span class="text-[10px] uppercase tracking-widest text-white/80 font-bold">04</span>
+                        <i class="fa-solid fa-medal text-2xl mt-0.5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-2">Remise Prestige</h3>
+                    <p class="text-slate-600 text-sm">
+                        Finitions main, pressage vapeur et livraison en housse protectrice siglée TB Création.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Avis & Témoignages Clients -->
+            <div class="bg-surface-soft rounded-3xl p-8 sm:p-12 border border-slate-200 reveal">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="text-emeraldBrand text-xs uppercase tracking-[0.2em] font-bold">Excellence Reconnue</span>
+                    <h3 class="font-serif text-2xl sm:text-4xl font-bold text-navy mt-1">Paroles de nos Clients</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card-3d-tilt bg-white p-6 rounded-2xl border border-slate-200 hover:border-emeraldBrand/60 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-emeraldBrand-bright text-sm gap-1 mb-3">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm italic leading-relaxed">
+                                "Mon costume 3 pièces en Faso Dan Fani bleu nuit et émeraude a fait sensation lors de mon mariage. Le tombé des épaules est digne des plus grands tailleurs."
+                            </p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-navy text-white font-serif font-bold flex items-center justify-center">K</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-navy">Karim O.</h4>
+                                <span class="text-[11px] text-emeraldBrand font-medium">Entrepreneur • Costume Mariage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-3d-tilt bg-white p-6 rounded-2xl border border-slate-200 hover:border-emeraldBrand/60 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-emeraldBrand-bright text-sm gap-1 mb-3">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm italic leading-relaxed">
+                                "J'ai commandé ma robe de gala en Koko Dunda depuis Paris grâce à leur suivi visio. Aucune retouche nécessaire à la réception, un travail d'orfèvre !"
+                            </p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-emeraldBrand text-white font-serif font-bold flex items-center justify-center">A</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-navy">Aïssata D.</h4>
+                                <span class="text-[11px] text-emeraldBrand font-medium">Architecte • Cliente Internationale</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-3d-tilt bg-white p-6 rounded-2xl border border-slate-200 hover:border-emeraldBrand/60 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-emeraldBrand-bright text-sm gap-1 mb-3">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm italic leading-relaxed">
+                                "TB Création maîtrise parfaitement l'équilibre entre tradition africaine et modernité. Mes tuniques professionnelles me valent des compliments chaque semaine."
+                            </p>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-slate-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-navy text-white font-serif font-bold flex items-center justify-center">M</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-navy">Dr. Moussa T.</h4>
+                                <span class="text-[11px] text-emeraldBrand font-medium">Cadre Supérieur • Garde-Robe Pro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SECTION CONTACT & PRISE DE RENDEZ-VOUS ================= -->
+    <section id="contact" class="py-20 px-4 sm:px-8 lg:px-16 bg-surface-soft border-t border-slate-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Infos Atelier (5 cols) -->
+            <div class="lg:col-span-5 space-y-6 reveal-left">
+                <span class="text-emeraldBrand text-xs uppercase tracking-[0.25em] font-bold block">Showroom & Contact Direct</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy"><span class="text-reveal-mask"><span class="text-reveal-inner">Rencontrons-nous à <span class="text-emeraldBrand italic font-normal">l'Atelier</span></span></span></h2>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Vous souhaitez discuter d'un cortège de mariage, d'une collection privée ou réserver un essayage ? Notre équipe vous accueille sur rendez-vous.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <!-- Adresse Officielle -->
+                    <div class="card-3d-tilt flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-200 hover:border-emeraldBrand shadow-sm transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-navy text-white flex items-center justify-center text-lg shrink-0 shadow-sm border border-emeraldBrand">
+                            <i class="fa-solid fa-location-dot text-emeraldBrand-light"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-emeraldBrand block">Adresse du Showroom</span>
+                            <h4 class="font-serif font-bold text-navy text-base sm:text-lg">Tombo, commune de Kaloum.</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Atelier &amp; Showroom TB Création • Consultations sur rendez-vous</p>
+                        </div>
+                    </div>
+
+                    <!-- Téléphones Cliquables -->
+                    <div class="card-3d-tilt flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-200 hover:border-emeraldBrand shadow-sm transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emeraldBrand text-white flex items-center justify-center text-lg shrink-0 shadow-sm">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="w-full">
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-emeraldBrand block">Téléphones Directs (Cliquez pour appeler)</span>
+                            <div class="flex flex-wrap items-center gap-2.5 mt-1.5">
+                                <a href="tel:+224623779665" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-soft hover:bg-navy text-navy hover:text-white border border-navy/15 text-xs sm:text-sm font-extrabold transition-all shadow-sm">
+                                    <i class="fa-solid fa-phone text-emeraldBrand"></i>
+                                    <span>+224 623 77 96 65</span>
+                                </a>
+                                <a href="tel:+224620062925" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-soft hover:bg-navy text-navy hover:text-white border border-navy/15 text-xs sm:text-sm font-extrabold transition-all shadow-sm">
+                                    <i class="fa-solid fa-phone text-emeraldBrand"></i>
+                                    <span>+224 620 06 29 25</span>
+                                </a>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-2">Disponibles du Lundi au Samedi (09h00 – 20h00) • Appels &amp; WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <!-- E-mail Officiel Cliquable -->
+                    <div class="card-3d-tilt flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-200 hover:border-emeraldBrand shadow-sm transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-navy text-white flex items-center justify-center text-lg shrink-0 shadow-sm border border-emeraldBrand">
+                            <i class="fa-solid fa-envelope text-emeraldBrand-light"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-emeraldBrand block">E-mail Officiel (Cliquez pour écrire)</span>
+                            <a href="mailto:tbcreation224@gmail.com" class="inline-flex items-center gap-2 font-serif font-bold text-navy hover:text-emeraldBrand text-base sm:text-lg transition-colors mt-0.5 underline decoration-emeraldBrand/50 underline-offset-4">
+                                <span>tbcreation224@gmail.com</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-emeraldBrand"></i>
+                            </a>
+                            <p class="text-xs text-slate-500 mt-1">Réponse rapide sous 24h pour vos devis, mariages et commandes sur-mesure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulaire de Contact Rapide (7 cols) -->
+            <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-lg reveal-right">
+                <h3 class="font-serif text-2xl font-bold text-navy mb-2">Envoyer un Message ou Réserver un Créneau</h3>
+                <p class="text-xs text-slate-500 mb-6">Remplissez ce formulaire pour toute demande d'information ou partenariat.</p>
+
+                <form id="quick-contact-form" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-bold uppercase text-navy block mb-1.5">Votre Nom *</label>
+                            <input type="text" id="qc-name" required placeholder="Votre nom complet" class="w-full px-4 py-3 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold uppercase text-navy block mb-1.5">Votre Email ou Téléphone *</label>
+                            <input type="text" id="qc-contact" required placeholder="email@exemple.com ou +224 623 77 96 65" class="w-full px-4 py-3 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-navy block mb-1.5">Objet de votre demande *</label>
+                        <select id="qc-subject" class="w-full px-4 py-3 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none">
+                            <option value="Rendez-vous Essayage / Prise de Mesures">Rendez-vous Essayage / Prise de Mesures</option>
+                            <option value="Projet Cortège Mariage & Cérémonie">Projet Cortège Mariage & Cérémonie</option>
+                            <option value="Commande Prêt-à-Porter & Expédition">Commande Prêt-à-Porter & Expédition</option>
+                            <option value="Autre demande">Autre demande</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-navy block mb-1.5">Votre Message *</label>
+                        <textarea id="qc-message" rows="3" required placeholder="Comment pouvons-nous vous accompagner ?" class="w-full px-4 py-3 rounded-xl bg-surface-soft border border-slate-300 text-navy text-sm focus:border-emeraldBrand focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="btn-navy w-full py-4 rounded-full font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2">
+                        <span>Envoyer à TB Création</span>
+                        <i class="fa-solid fa-arrow-right text-emeraldBrand-bright"></i>
+                    </button>
+                    <div id="qc-feedback" class="hidden p-4 rounded-xl bg-emeraldBrand-soft border border-emeraldBrand text-navy text-xs font-semibold"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="african-charter-border"></div>
+
+    <!-- ================= PIED DE PAGE (FOOTER BLEU SOMBRE #0A192F, TEXTE BLANC & ACCENTS VERTS) ================= -->
+    <footer class="bg-navy text-white pt-16 pb-12 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Col 1 : Identité Marque -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-white text-navy flex items-center justify-center font-serif font-extrabold text-lg border-2 border-emeraldBrand-bright">
+                            TB
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-white block leading-none">THIERNO CRÉATION</span>
+                            <span class="text-[10px] uppercase tracking-widest text-emeraldBrand-bright font-bold">TB Création Couture</span>
+                        </div>
+                    </div>
+                    <p class="text-white/75 text-sm leading-relaxed">
+                        Stylisme & Modélisme Africain Moderne. L'alliance du sur-mesure architectural et des étoffes patrimoniales d'Afrique.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#contact" aria-label="Instagram" class="w-9 h-9 rounded-full bg-navy-light border border-white/15 flex items-center justify-center text-emeraldBrand-bright hover:bg-emeraldBrand-bright hover:text-navy transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#contact" aria-label="Facebook" class="w-9 h-9 rounded-full bg-navy-light border border-white/15 flex items-center justify-center text-emeraldBrand-bright hover:bg-emeraldBrand-bright hover:text-navy transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#contact" aria-label="TikTok" class="w-9 h-9 rounded-full bg-navy-light border border-white/15 flex items-center justify-center text-emeraldBrand-bright hover:bg-emeraldBrand-bright hover:text-navy transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="tel:+224623779665" aria-label="Appeler le +224 623 77 96 65" class="w-9 h-9 rounded-full bg-navy-light border border-white/15 flex items-center justify-center text-emeraldBrand-bright hover:bg-emeraldBrand-bright hover:text-navy transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 : Liens Rapides -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emeraldBrand-bright"></span> Navigation
+                    </h4>
+                    <ul class="space-y-2.5 text-sm text-white/75">
+                        <li><a href="#accueil" class="hover:text-emeraldBrand-bright transition-colors">Accueil</a></li>
+                        <li><a href="#savoir-faire" class="hover:text-emeraldBrand-bright transition-colors">Savoir-Faire & Étoffes</a></li>
+                        <li><a href="#lookbook" class="hover:text-emeraldBrand-bright transition-colors">Lookbook & Collections</a></li>
+                        <li><a href="#videos" class="hover:text-emeraldBrand-bright transition-colors">Immersion & Défilé Vidéo</a></li>
+                        <li><a href="#sur-mesure" class="hover:text-emeraldBrand-bright transition-colors">Simulateur de Devis</a></li>
+                        <li><a href="#processus" class="hover:text-emeraldBrand-bright transition-colors">Processus de Création</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 : Coordonnées Directes & Atelier -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emeraldBrand-light"></span> Contact &amp; Atelier
+                    </h4>
+                    <ul class="space-y-3 text-sm text-white/85">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-emeraldBrand-light mt-1 shrink-0"></i>
+                            <span><strong class="text-white">Adresse :</strong> Tombo, commune de Kaloum.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-phone text-emeraldBrand-light mt-1 shrink-0"></i>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-xs uppercase tracking-wider text-emeraldBrand-light font-bold">Téléphones :</span>
+                                <a href="tel:+224623779665" class="hover:text-emeraldBrand-light transition-colors font-semibold underline decoration-white/25 underline-offset-4">+224 623 77 96 65</a>
+                                <a href="tel:+224620062925" class="hover:text-emeraldBrand-light transition-colors font-semibold underline decoration-white/25 underline-offset-4">+224 620 06 29 25</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-envelope text-emeraldBrand-light mt-1 shrink-0"></i>
+                            <div class="flex flex-col">
+                                <span class="text-xs uppercase tracking-wider text-emeraldBrand-light font-bold">E-mail :</span>
+                                <a href="mailto:tbcreation224@gmail.com" class="hover:text-emeraldBrand-light transition-colors font-semibold underline decoration-white/25 underline-offset-4 break-all">tbcreation224@gmail.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 : Newsletter Cercle Privé & Spécialités -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emeraldBrand-light"></span> Cercle Privé TB
+                    </h4>
+                    <p class="text-sm text-white/80 mb-4">Inscrivez-vous pour recevoir nos invitations aux défilés et nouvelles collections Haute Couture.</p>
+                    <form id="newsletter-form" class="flex flex-col gap-2.5">
+                        <input type="email" id="newsletter-email" required placeholder="Votre adresse email..." class="px-4 py-3 rounded-xl bg-navy-dark/60 border border-white/20 text-sm text-white placeholder:text-white/55 focus:border-emeraldBrand-light focus:outline-none">
+                        <button type="submit" class="btn-emerald py-3 rounded-xl text-xs font-bold uppercase tracking-widest shadow-md">S'inscrire</button>
+                    </form>
+                    <p id="newsletter-msg" class="text-xs text-emeraldBrand-light font-semibold mt-2 hidden"></p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/75 gap-4">
+                <p>&copy; 2026 THIERNO CRÉATION — TB CRÉATION (Tombo, commune de Kaloum). Tous droits réservés.</p>
+                <div class="flex flex-wrap items-center gap-3">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15">
+                        <span class="w-2.5 h-2.5 rounded-full bg-[#24549A] border border-white"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-[#A69B43] border border-white"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-[#FFFFFF]"></span>
+                        <span>Identité Officielle : Bleu Royal #24549A • Vert Olive Doré #A69B43 • Blanc #FFFFFF</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= MODALE LIGHTBOX LOOKBOOK (THÈME BLANC & BLEU SOMBRE) ================= -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-navy/80 backdrop-blur-md opacity-0 transition-opacity duration-300">
+        <div class="lightbox-card relative w-full max-w-4xl bg-white border-2 border-emeraldBrand rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-12 max-h-[90vh]">
+            
+            <!-- Bouton Fermer -->
+            <button id="close-lightbox" aria-label="Fermer" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white text-navy border border-slate-200 hover:bg-emeraldBrand hover:text-white transition-colors flex items-center justify-center shadow-md">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Image Modale (6 cols) -->
+            <div class="md:col-span-6 bg-surface-soft aspect-[4/5] md:aspect-auto h-64 sm:h-80 md:h-full overflow-hidden">
+                <img id="modal-img" src="" alt="Aperçu Création TB" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Détails Modale (6 cols) -->
+            <div class="md:col-span-6 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto">
+                <div class="space-y-4">
+                    <span id="modal-category" class="inline-block px-3.5 py-1 rounded-full bg-emeraldBrand-soft border border-emeraldBrand-border text-emeraldBrand text-xs uppercase tracking-widest font-bold">Catégorie</span>
+                    <h3 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold text-navy">Titre de la création</h3>
+                    <p id="modal-desc" class="text-slate-600 text-sm leading-relaxed">Description complète de la tenue.</p>
+                    
+                    <div class="pt-4 border-t border-slate-200 space-y-2.5 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Étoffe noble :</span>
+                            <span id="modal-fabric" class="text-navy font-bold">Faso Dan Fani</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Délai atelier :</span>
+                            <span class="text-navy font-semibold">7 à 14 jours ouvrés</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Patronage :</span>
+                            <span class="text-emeraldBrand font-bold">100% Sur-Mesure Certifié</span>
+                        </div>
+                        <div class="flex justify-between pt-3 border-t border-slate-200">
+                            <span class="text-slate-500 font-semibold">Prix Atelier :</span>
+                            <span id="modal-price" class="font-serif text-xl font-extrabold text-navy">165 000 FCFA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 mt-6 border-t border-slate-200">
+                    <button id="modal-order-btn" class="w-full btn-emerald font-bold text-xs sm:text-sm uppercase tracking-wider py-4 px-6 rounded-full flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-tape"></i>
+                        <span>Commander ce Modèle à mes Mesures</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= BOUTON RETOUR EN HAUT AVEC PROGRESSION SVG ================= -->
+    <button id="back-to-top" aria-label="Retour en haut de page" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-navy text-white shadow-xl border border-emeraldBrand/40 flex items-center justify-center group focus:outline-none">
+        <svg class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="21" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2.5"></circle>
+            <circle id="progress-ring-circle" cx="24" cy="24" r="21" fill="none" stroke="#A69B43" stroke-width="2.5" stroke-dasharray="131.95" stroke-dashoffset="131.95" stroke-linecap="round"></circle>
+        </svg>
+        <i class="fa-solid fa-arrow-up text-sm text-emeraldBrand-bright group-hover:-translate-y-0.5 transition-transform duration-300"></i>
+    </button>
+
+    <!-- ================= LOGIQUE JAVASCRIPT COMPLÈTE ================= -->
+        <!-- Script principal externe -->
+    <script src="script.js"></script>
+</body>
+</html>
